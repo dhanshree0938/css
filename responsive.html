@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div { 
+            width:25%;
+            /*width is only for the content*/
+            /*Screen width= 1000px, div width=250px
+            width is  of content
+            border is additional
+            254px is including left and right border*/
+            border: 2px solid purple;
+            float:left;
+            box-sizing: border-box ;
+            /*it includes border inside the width
+            example:- 250px box= 4px border width + 246px content*/
+        }
+        img { 
+            width:100%;
+        }
+        @media (max-width:400px){
+            .small{
+                width:100%
+            }
+        }
+        @media (min-width:401px) and (max-width:800px) {
+            .medium{
+                width:50%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="small medium">
+        <img src="Nature.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minus delectus qui consequatur rem nostrum, commodi non, officiis sapiente blanditiis placeat sint nihil, fuga sed? Corporis ex dolores eligendi sed.</p>
+    </div>
+    <div class="small medium">
+        <img src="Nature.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minus delectus qui consequatur rem nostrum, commodi non, officiis sapiente blanditiis placeat sint nihil, fuga sed? Corporis ex dolores eligendi sed.</p>
+    </div>
+    <div class="small medium">
+        <img src="Nature.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minus delectus qui consequatur rem nostrum, commodi non, officiis sapiente blanditiis placeat sint nihil, fuga sed? Corporis ex dolores eligendi sed.</p>
+    </div>
+    <div class="small medium">
+        <img src="Nature.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minus delectus qui consequatur rem nostrum, commodi non, officiis sapiente blanditiis placeat sint nihil, fuga sed? Corporis ex dolores eligendi sed.</p>
+    </div>
+</body>
+</html>
