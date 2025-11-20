@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Universal Tag :it is used for all tags it apply on all 
+    it is denoted by (*) */
+        * {
+            color: rgb(232, 98, 31);
+        }
+
+        /* descendent selector(Space):
+    div p==>selects all p tags which are inside the div (At any level) */
+        div p {
+
+            color: rgb(53, 212, 159);
+        }
+
+        /* Child Selector:selects the immediate childeren.
+div > p will select all the p tags with are immediate children of div */
+        div > p {
+            color: rgb(134, 138, 3);
+        }
+
+        /* next sibling child selector(+)
+it selects the p tag which comes immideatly after div (if instead of we select tag other tag is there so css will not apply)
+Ex.div+p if after div instead of p h2 or other tag is there so css will not apply */
+        div + p {
+
+            color: rgb(96, 4, 96);
+        }
+
+        /* subsequent sibling selector(~):it selects all the p siblings that (come after div )*/
+        div ~ p {
+
+            color: rgb(133, 237, 202);
+            background-color: rgb(5, 5, 23);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Combinators</h2>
+    <div>
+        <p>First para</p>
+        <p>Second para</p>
+        <span>
+            <p>para inside the span</p>
+        </span>
+        <p>third para</p>
+    </div>
+    <p>para after div</p>
+    <p>last para after div</p>
+</body>
+
+</html>
